@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdbootstrap/css/mdb.min.css">
+    <title>Recuperación la contraseña</title>
+</head>
+
+<body>
+        <p>
+        <h1 class="text-center">Recuperar la contraseña</h1>
+        <main>
+            <div class="container">
+                <form name="forml" id="forml" method="POST" onsubmit="return formulario()" action="../php/olvido.php">
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                        <input type="email" class="form-control" name="correo" id="correo" placeholder="Tú correo">
+
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-primary" name="sig" id="sig" value="Enviar">
+                            <a href="usuario.html"><input type="button" class="btn btn-primary" name="v" id="v" value="Volver"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        </p>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function formulario(){
+            var cor = document.forms['forml']['correo'].value;
+            if(cor == "" || cor == null){
+                alert("Introduzca su correo");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

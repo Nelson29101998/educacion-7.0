@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <title>Nueva Usuario</title>
+</head>
+
+<body>
+    <h1 class="text-center">Registro de usuario</h1>
+    <main>
+        <center>
+            <div class="container">
+                <form id="forml" name="forml" method="POST" onsubmit="return formulario()"
+                    action="../php/saveusuario.php">
+                    <div class="form-group">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label for="nom"><i class="fas fa-file-signature"></i> Nombre:</label>
+                                        <input type="text" class="form-control" name="nom" id="nom"
+                                            placeholder="Ingrese su nombre" maxlength="20">
+                                    </td>
+                                    <td>
+                                        <label for="ape"><i class="fas fa-file-signature"></i> Apellidos:</label>
+                                        <input type="text" class="form-control" name="ape" id="ape"
+                                            placeholder="Ingrese sus apellidos" maxlength="40">
+                                    </td>
+                                    <td>
+                                        <label for="user"><i class="fas fa-user"></i> Usuario:</label>
+                                        <input type="text" class="form-control" name="user" id="user"
+                                            placeholder="Ingrese su usuario" maxlength="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="dir"><i class="fas fa-home"></i> Dirección:</label>
+                                        <textarea class="form-control" cols="30" rows="1" name="dir" id="dir"
+                                            placeholder="Ingrese su dirección" maxlength="500"></textarea>
+                                    </td>
+                                    <td>
+                                        <label for="com"><i class="fas fa-road"></i> Comuna:</label>
+                                        <input type="text" class="form-control" name="com" id="com"
+                                            placeholder="Ingrese su comuna" maxlength="100">
+                                    </td>
+                                    <td>
+                                        <label for="tel"><i class="fas fa-phone"></i> Télefono:</label>
+                                        <input type="number" class="form-control" name="tel" id="tel"
+                                            aria-describedby="telhelp" placeholder="Ingrese su télefono" maxlength="11">
+                                        <small id="telhelp" class="form-text text-muted">Número de télefono. Ejemplo: xx
+                                            x xxxx xxxx</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="estcivil"><i class="fas fa-atlas"></i> Estado Civil:</label>
+                                        <select class="form-control" name="estcivil" id="estcivil">
+                                            <option value="sele">Selección</option>
+                                            <option value="Casado">Casado</option>
+                                            <option value="Soltero">Soltero</option>
+                                            <option value="Otro">Otro</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <label for="rut"><i class="fas fa-id-card"></i> Rut:</label>
+                                        <input type="text" class="form-control" name="rut" id="rut"
+                                            aria-describedby="ruthelp" placeholder="Ingrese su rut" maxlength="12">
+                                        <small id="ruthelp" class="form-text text-muted">Ejemplo: xx.xxx.xxx-x</small>
+                                    </td>
+                                    <td>
+                                        <label for="correo"><i class="fas fa-at"></i> Mail:</label>
+                                        <input type="email" class="form-control" name="correo" id="correo"
+                                            placeholder="Ingrese su mail" maxlength="100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="pass1"><i class="fas fa-key"></i> Contraseña:</label>
+                                        <input type="password" class="form-control" name="pass1" id="pass1"
+                                            placeholder="Ingrese su contraseña" maxlength="100">
+                                    </td>
+                                    <td>
+                                        <label for="pass2"><i class="fas fa-key"></i> Repetir contraseña:</label>
+                                        <input type="password" class="form-control" name="pass2" id="pass2"
+                                            placeholder="Repita contraseña" maxlength="100">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button type="reset" class="btn btn-primary" name="lim" id="lim"><i
+                                                class="fas fa-brush"></i> Limpiar</button>
+                                    </td>
+                                    <td>
+                                        <button type="submit" class="btn btn-primary" name="env" id="env"><i
+                                                class="fas fa-clipboard-check"></i> Enviar</button>
+                                    </td>
+                                    <td>
+                                        <a href="../inicio.html">
+                                            <button type="button" class="btn btn-primary" name="vol" id="vol"><i
+                                                    class="fas fa-backspace"></i> Volver</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </center>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function formulario() {
+            var nom = document.forms['forml']['nom'].value;
+            var ape = document.forms['forml']['ape'].value;
+            var user = document.forms['forml']['user'].value;
+            var dir = document.forms['forml']['dir'].value;
+            var com = document.forms['forml']['com'].value;
+            var tel = document.forms['forml']['tel'].value;
+            var estc = document.forms['forml']['estcivil'].value;
+            var rut = document.forms['forml']['rut'].value;
+            var correo = document.forms['forml']['correo'].value;
+            var pass1 = document.forms['forml']['pass1'].value;
+            var pass2 = document.forms['forml']['pass2'].value;
+
+            if (nom == "" || nom == null) {
+                alert("Introduzca su nombre");
+                return false;
+            }
+
+            if (ape == "" || ape == null) {
+                alert("Introduzca su apellido");
+                return false;
+            }
+
+            if (user == "" || user == null) {
+                alert("Introduzca su usuario");
+                return false;
+            }
+
+            if (dir == "" || dir == null) {
+                alert("Introduzca su dirección");
+                return false;
+            }
+
+            if (com == "" || com == null) {
+                alert("Introduzca su comuna");
+                return false;
+            }
+
+
+            var cadtel = tel.length;
+            if (tel == "" || tel == null) {
+                alert("Introduzca su télefono");
+                return false;
+            }
+
+            if (cadtel < 11) {
+                alert("Pon su número por ejemplo: xx x xxxx xxxx");
+                return false;
+            }
+
+            if (estc == "sele") {
+                alert("Introduzca su Estado Civil");
+                return false;
+            }
+
+            var cadenarut = rut.length;
+            if (rut == "" || rut == null) {
+                alert("Introduzca su RUT");
+                return false;
+            }
+
+            if (cadenarut < 12) {
+                alert("Se escribe por ejemplo: xx.xxx.xxx-x");
+                return false;
+            }
+
+            if (correo == "" || correo == null) {
+                alert("Introduzca su Mail");
+                return false;
+            }
+
+            if (pass1 == "" || pass1 == null) {
+                alert("Introduzca su Contraseña");
+                return false;
+            }
+
+            if (pass2 == "" || pass2 == null) {
+                alert("Introduzca su Repetir contraseña");
+                return false;
+            }
+
+            if (pass1 != pass2) {
+                alert("la contaseña no es igual");
+                return false;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
