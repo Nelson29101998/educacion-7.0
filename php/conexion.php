@@ -1,18 +1,19 @@
 <?php
 //Heroku
-/*
+
 $servername = "i2cpbxbi4neiupid.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $username = "k5ahga8faj2128ct";
 $password = "hovzlntua9665yvb";
 $bd = "qlx4qct0gi7pavjh";
-*/
+
 
 //XAMPP
+/*
 $servername = "localhost";
 $username = "root";
 $password = "";
 $bd = "cuentafinanciera";
-
+*/
 $conexion = new mysqli($servername, $username, $password, $bd);
 if ($conexion->connect_error) {
 
