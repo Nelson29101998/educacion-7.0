@@ -43,7 +43,7 @@ $_SESSION["Usuario"] = $use;
                 <div class="collapse" id="cuadro1">
                     <div class="card card-body">
                         <label>Contenido 1: </label>
-                        <a href="https://doc-04-60-apps-viewer.googleusercontent.com/viewer/secure/pdf/9lor63ga7k8sfl308eldi3bd7rrne5m5/4fnvc22h4bqbikjmh5m0e2heafs28kgn/1595426625000/drive/04262136302289668855/ACFrOgAw1vQQpPro-1-f9DIp_bUs3jfeLZ1KwJIBvkSf2_tIQ73iYpo5yiAxBtuAqdsuJPTxNndzXZYcmFtGEkoWpqvXduugwAOY3BCqGNXk8sGt_En--BEe3_RQgdNIh3fy3n_cwqyS_Lee_TIY?print=true&nonce=l3eo8cid33gda&user=04262136302289668855&hash=ont138v50gs52t5jc3elfcqqfjisv8tg" target="_blank">
+                        <a href="https://drive.google.com/file/d/1V9Cw4pq-66EkqyKDVMPNFDHp8rx6qM4W/view?usp=sharing" target="_blank">
                             Unidad 1
                         </a>
                         <div class="dropdown-divider"></div>
