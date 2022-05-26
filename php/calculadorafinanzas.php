@@ -151,7 +151,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="hijo" id="hijo" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hi" aria-expanded="false" aria-controls="hi">Detalle gasto hijos</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hi" 
+                                                        aria-expanded="false" aria-controls="hi">Detalle gasto hijos</button>
                                                 <div class="collapse" id="hi">
                                                     <div class="card card-body">
                                                         <label class="h6">Matrícula y pensión:</label>
