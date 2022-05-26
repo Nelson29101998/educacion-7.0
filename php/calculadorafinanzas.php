@@ -25,7 +25,8 @@ $_SESSION["Usuario"] = $use;
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="menu.php"><button type="button" class="btn btn-primary"><i class="fas fa-home"></i> Inicio</button></a>
-        <a href="micuenta.php"><button type="button" class="btn btn-primary"><i class="fas fa-user"></i> Mi Cuenta: <span><?php echo $_SESSION['Nombre'] . " " . $_SESSION['Apellidos']; ?></button> </a>
+        <a href="micuenta.php"><button type="button" class="btn btn-primary"><i class="fas fa-user">
+            </i> Mi Cuenta: <span><?php echo $_SESSION['Nombre'] . " " . $_SESSION['Apellidos']; ?></button> </a>
         <a href="cursos.php"><button type="button" class="btn btn-primary"><i class="fas fa-book-reader"></i> Cursos de educación financiera</button></a>
         <a href="gastos.php"><button type="button" class="btn btn-primary"><i class="fas fa-hand-holding-usd"></i> App Control de Gastos</button></a>
         <a href="ayuda.php"><button type="button" class="btn btn-primary"><i class="fas fa-life-ring"></i> Ayuda</button></a>
@@ -106,7 +107,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="creditos" id="creditos" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#credito" aria-expanded="false" aria-controls="credito">Detalle crédito</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#credito"
+                                                        aria-expanded="false" aria-controls="credito">Detalle crédito</button>
                                                 <div class="collapse" id="credito">
                                                     <div class="card card-body">
                                                         <label class="h6">Hípotecarios:</label>
@@ -130,7 +132,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="alimenta" id="alimenta" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#alimentacion" aria-expanded="false" aria-controls="alimentacion">Detalle alimentación</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#alimentacion"
+                                                        aria-expanded="false" aria-controls="alimentacion">Detalle alimentación</button>
                                                 <div class="collapse" id="alimentacion">
                                                     <div class="card card-body">
                                                         <label class="h6">Mercado:</label>
@@ -172,7 +175,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="perhog" id="perhog" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ph" aria-expanded="false" aria-controls="ph">Detalle gasto cuidado personal y del hogar</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ph"
+                                                        aria-expanded="false" aria-controls="ph">Detalle gasto cuidado personal y del hogar</button>
                                                 <div class="collapse" id="ph">
                                                     <div class="card card-body">
                                                         <label class="h6">Artículo de aseo:</label>
@@ -193,7 +197,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="serpub" id="serpub" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pub" aria-expanded="false" aria-controls="pub">Detalle gasto servicios públicos</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pub"
+                                                        aria-expanded="false" aria-controls="pub">Detalle gasto servicios públicos</button>
                                                 <div class="collapse" id="pub">
                                                     <div class="card card-body">
                                                         <label class="h6">Agua:</label>
@@ -226,7 +231,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="seg" id="seg" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seguro" aria-expanded="false" aria-controls="seguro">Detalle gasto seguros</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#seguro"
+                                                        aria-expanded="false" aria-controls="seguro">Detalle gasto seguros</button>
                                                 <div class="collapse" id="seguro">
                                                     <div class="card card-body">
                                                         <label class="h6">Medicina prepagada:</label>
@@ -250,7 +256,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="trans" id="trans" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tra" aria-expanded="false" aria-controls="tra">Detalle gasto transporte</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tra"
+                                                        aria-expanded="false" aria-controls="tra">Detalle gasto transporte</button>
                                                 <div class="collapse" id="tra">
                                                     <div class="card card-body">
                                                         <label class="h6">Buses:</label>
@@ -274,7 +281,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="otrogastos" id="otrogastos" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#otrosgastos" aria-expanded="false" aria-controls="otrosgastos">Detalle gasto transporte</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#otrosgastos"
+                                                        aria-expanded="false" aria-controls="otrosgastos">Detalle gasto transporte</button>
                                                 <div class="collapse" id="otrosgastos">
                                                     <div class="card card-body">
                                                         <label class="h6">Entretenamiento:</label>
@@ -327,7 +335,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="ahorroactual" id="ahorroactual" class="form-control">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ahora" aria-expanded="false" aria-controls="ahora">Detalle ahorro actual</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ahora" 
+                                                        aria-expanded="false" aria-controls="ahora">Detalle ahorro actual</button>
                                                 <div class="collapse" id="ahora">
                                                     <div class="card card-body">
                                                         <label class="h6">Cesantías:</label>
@@ -355,7 +364,8 @@ $_SESSION["Usuario"] = $use;
                                             <div class="col-sm-5">
                                                 <input type="number" name="mensual" id="mensual" class="form-control CalcularMensual">
 
-                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#mensuales" aria-expanded="false" aria-controls="mensuales">Detalle ahorro mensual</button>
+                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#mensuales" 
+                                                        aria-expanded="false" aria-controls="mensuales">Detalle ahorro mensual</button>
                                                 <div class="collapse" id="mensuales">
                                                     <div class="card card-body">
                                                         <label class="h6">Fondo de empleados:</label>
@@ -491,8 +501,10 @@ $_SESSION["Usuario"] = $use;
         </center>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="../js/bootstrap/bootstrap.min.js"></script>
     <script>
         function openNav() {
