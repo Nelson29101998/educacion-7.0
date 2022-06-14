@@ -10,7 +10,6 @@ $gast = mysqli_query($conexion, $tablagastos);
 $tablaingresos = "SELECT * FROM ingresos WHERE Usuario = '$use'";
 $ing = mysqli_query($conexion, $tablaingresos);
 
-
 $sumargastos = "SELECT SUM(Valor) as Totalgastos FROM gastos WHERE Usuario = '$use'";
 $totalgastos = mysqli_query($conexion, $sumargastos);
 $revgas = mysqli_fetch_assoc($totalgastos);
@@ -86,7 +85,6 @@ $resultados = $calcingreso - $calcgasto;
                         ?>
                     </select>
                 </label>
-
 
                 <div class="form-group">
                     <div class="custom-control custom-radio custom-control-inline">
